@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+streamlit
+supabase
+twilio
+python-dotenv
+stripe
+openai
+python-multipart
