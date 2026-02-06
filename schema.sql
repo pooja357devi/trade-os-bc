@@ -24,6 +24,17 @@ create table clients (
   created_at timestamp with time zone default now()
 );
 
+-- USERS (Authentication)
+create table users (
+  user_id uuid default uuid_generate_v4() primary key,
+  username text not null,
+  client_id uuid references clients(id),
+  email text not null unique,
+  password text not null,
+  role text default 'user',
+  created_at timestamp with time zone default now()
+);
+
 -- 2. LEADS (Customers)
 create table leads (
   id uuid default uuid_generate_v4() primary key,

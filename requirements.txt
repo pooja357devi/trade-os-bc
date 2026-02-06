@@ -7,3 +7,4 @@ python-dotenv
 stripe
 openai
 python-multipart
+werkzeug
