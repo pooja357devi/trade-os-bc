@@ -125,6 +125,7 @@ if st.session_state.user_id is None:
             email = st.text_input("Email")
             password = st.text_input("Password", type="password")
             confirm = st.text_input("Confirm Password", type="password")
+            
 
             if st.button("Create Account"):
                 if not all([username, selected_client, email, password, confirm]):
